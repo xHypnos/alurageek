@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <link rel="shortcut icon" href="/assets/img/icono.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/css/header/header_container.css">
+    <link rel="stylesheet" href="/assets/css/login_main/login_container.css">
+    <link rel="stylesheet" href="/assets/css/footer/footer_container.css">
+</head>
+<body>
+    <header>
+        <section class="header__container">
+            <div class="container__logobuscador">
+                <h1 class="header__logo"><img onclick="location.href='/index.html'" src="/assets/img/logo.png" alt="Logo AluraGeek" class="header__logo__img"></h1>
+                <div class="buscador__container">
+                    <input type="search" class="header__buscador" placeholder="¿Qué deseas buscar?">
+                    <ion-icon class="buscador__icono" name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <ion-icon class="header__busquedabtn" name="search-outline"></ion-icon>
+        </section>
+    </header>
+    <main>
+        <section class="login__container">
+            <form action="" class="login__form" data-form>
+                <h3 class="login__form__titulo">Iniciar Sesión</h3>
+                <input class="login__form__input" type="email" placeholder="Escriba su correo electrónico" required data-email>
+                <input class="login__form__input" type="password" placeholder="Escriba su contraseña" required data-password>
+                <input class="login__form__input login__form__submitbtn" type="submit" value="Entrar"></form>
+        </section>        
+    </main>
+    <footer>
+        <section class="footer__container">
+            <div class="container__logoul">
+                <div class="footer__logo"><img src="/assets/img/logo.png" alt="Logo AluraGeek" class="footer__logo__img"></div>
+                <ul class="footer__ul">
+                    <li class="footer__ul__li">Quienes somos</li>
+                    <li class="footer__ul__li">Politica de privacidad</li>
+                    <li class="footer__ul__li">Programa de fidelidad</li>
+                    <li class="footer__ul__li">Nuestras tiendas</li>
+                    <li class="footer__ul__li">Quiero ser franquiciado</li>
+                    <li class="footer__ul__li">Anuncie aqui</li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <h3 class="footer__form__titulo">Hable con nosotros</h3>
+                <input type="text" name="" id="" class="footer__form__input" placeholder="Nombre">
+                <textarea class="footer__form__textarea" name="" id="" cols="30" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                <button type="submit" class="footer__form__btn">Enviar mensaje</button>
+            </div>
+        </section>
+        <div class="footer__infodesarrollador">
+            <p class="infodesarrollador__p">Desarrollado por <a class="infodesarrollador__link" href="https://andresmontes.dev/" target="_blank" rel="noopener">Andres Montes</a></p>
+            <p class="infodesarrollador__p">2023</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+}
+
+.container__logobuscador{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo__img{
+    height: 40px;
+    margin-right: 2rem;
+}
+
+.buscador__container{
+    position: relative;
+}
+
+.header__buscador{
+    font-family: 'Raleway', sans-serif;
+    width: 393px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: .2rem 1rem;
+    color: var(--color-texto);
+}
+
+.buscador__icono{
+    color: var(--color-texto);
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header__loginbtn{
+    padding: .5rem 2rem;
+    background: none;
+    color: var(--color-link);
+    border: 1px solid var(--color-link);
+    cursor: pointer;
+}
+
+.header__busquedabtn{
+    color: var(--color-texto);
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 1120px){
+    .header__container{
+        padding: 1rem 2rem;
+    }      
+}
+
+@media (max-width: 768px){
+    .header__container{
+        padding: 1rem;
+    }
+
+    .header__buscador{
+        width: 250px;
+    }
+
+    /* ESTILO DEL BOTON PAGINA AGREGAR_PRODUCTO.HTML */
+
+    .header__loginbtn__agregarproducto{
+        padding: .5rem
+    }
+}
+
+@media (max-width: 560px){
+    .header__logo__img{
+        margin-right: .5rem;
+    }
+
+    .header__buscador{
+        width: 175px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__logo__img{
+        height: 35px;   
+    }
+    
+    .buscador__container{
+        display: none;
+    }
+
+    .header__busquedabtn{
+        display: flex;
+        font-size: 1.5rem;
+    }
+}

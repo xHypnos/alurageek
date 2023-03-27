@@ -1,0 +1,25 @@
+{
+    "usuario": [
+        {
+            "nombre": "Wilson Montes",
+            "email": "hypnoz@live.com",
+            "password": "123456789"
+        }
+    ],
+    "producto":[
+        {
+            "imagen": "/assets/img/item1.png",
+            "categoria": "Star Wars",
+            "Nombre": "Mug Star Wars",
+            "precio": 60,
+            "descripcion": "Mug con diseño de Star Wars" 
+        },
+        {
+            "imagen": "/assets/img/item2.png",
+            "categoria": "Star Wars",
+            "Nombre": "Mug Star Wars",
+            "precio": 60,
+            "descripcion": "Mug con diseño de Star Wars" 
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+.footer__container{
+    padding: 1rem 10rem;
+    background: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__logoul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.footer__logo__img{
+    width: 160px;
+    margin-top: 2rem;
+}
+
+.footer__ul{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__ul__li{
+    cursor: pointer;
+}
+
+.footer__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__form__titulo{
+    margin-bottom: .5rem;
+}
+
+.footer__form__input, .footer__form__textarea{
+    font-family: 'Raleway', sans-serif;
+    padding: .8rem;
+    width: 500px;
+    margin-bottom: .5rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.footer__form__btn{
+    border: none;
+    color: #ffffff;
+    background: var(--color-link);
+    width: 135px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.footer__infodesarrollador{
+    text-align: center;
+    padding: 1rem;
+}
+
+.infodesarrollador__link{
+    text-decoration: none;
+}
+
+@media (max-width: 1280px){
+    .footer__container{
+        padding: 2rem;
+    } 
+
+    .container__logoul{
+        flex-direction: column;
+    }
+
+    .footer__logo__img{
+        margin: 0;
+    }
+
+    .footer__ul{
+        padding: 0;
+        height: 90%;
+    }
+
+    .footer__form{
+        width: 60%
+    }
+
+    .footer__form__titulo{
+        color: var(--color-texto);
+    }
+
+    .footer__form__input, .footer__form__textarea{
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px){
+    .footer__form{
+        width: 50%
+    }   
+}
+
+@media (max-width: 450px){
+    .footer__container{
+        flex-direction: column;
+    }   
+
+    .container__logoul{
+        width: 100%;
+    }
+
+    .footer__logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__logo__img{
+        margin-bottom: 1rem;
+    }
+
+    .footer__ul{
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__ul__li{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .footer__form{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}

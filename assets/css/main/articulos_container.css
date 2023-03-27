@@ -1,0 +1,142 @@
+.articulos__container{
+    padding: 1rem 10rem;
+    background: #F5F5F5;
+
+}
+
+.articulos__categoria{
+    padding-top: 3rem;
+}
+
+.articulos__cabecera{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.articulos__cabecera__titulo{
+    font-size: 1.5rem;
+    color: var(--color-texto);
+}
+
+.articulos__cabecera__link{
+    color: var(--color-link);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.ion-arrow{
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.articulos__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulos__item{
+    margin-bottom: 1rem;
+}
+
+.articulo__img{
+    width: 175px;
+    margin-bottom: .2rem;
+}
+
+.articulo__nombre{
+    color: var(--color-texto);
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+
+.articulo__precio{
+    color: var(--color-texto);
+    font-weight: 600;
+    margin-bottom: .3rem;
+}
+
+.articulo__link{
+    color: var(--color-link);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* CSS PAGINA PRODUCTOS.HTML */
+
+.agregar__productobtn{
+    border: none;
+    background: var(--color-link);
+    color: #ffffff;
+    padding: .7rem 1rem;
+}
+
+.articulos__item{
+    position: relative;
+}
+
+.container__icons{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.delete__icon, .edit__icon{
+    cursor: pointer;
+}
+
+.delete__icon{
+    margin-right: .5rem;
+}
+
+@media (max-width: 1280px){
+    .articulos__container{
+        padding: 2rem;
+    }   
+    
+    .articulos__categoria{
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .articulos__container{
+        padding: 1rem;
+    }
+
+    .articulo__img{
+        width: 165px;
+    }
+}
+
+@media (max-width: 450px){
+    .articulos__categoria{
+        padding-top: 1rem;
+    }   
+
+    .articulos__contenido{
+        justify-content: space-around;
+    }
+
+    .articulo__img{
+        width: 156px;
+        margin-bottom: .2rem;
+    }
+
+    /* MEDIA PARA PAGINA PRODUCTOS.HTML */
+
+    .cabecera__productos{
+        flex-direction: column;
+    }
+
+    .agregar__productobtn{
+        margin-top: 1rem;
+        width: 200px;
+    }
+}
