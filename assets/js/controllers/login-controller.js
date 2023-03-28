@@ -13,6 +13,13 @@ const validarInformacion = async (email, password) =>{
     }
 };
 
-export const loginController = {
-    validarInformacion,
-};
+const formulario = document.querySelector('[data-form]');
+
+formulario.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+
+    const email = document.querySelector("[data-email]").value;
+    const password = document.querySelector("[data-password]").value;
+
+    validarInformacion(email, password);
+});

@@ -15,14 +15,14 @@
       {
           "imagen": "/assets/img/item1.png",
           "categoria": "Star Wars",
-          "Nombre": "Mug Star Wars",
+          "nombre": "Mug Star Wars",
           "precio": 60,
           "descripcion": "Mug con diseño de Star Wars" 
       },
       {
           "imagen": "/assets/img/item2.png",
           "categoria": "Star Wars",
-          "Nombre": "Mug Star Wars",
+          "nombre": "Mug Star Wars",
           "precio": 60,
           "descripcion": "Mug con diseño de Star Wars" 
       }
