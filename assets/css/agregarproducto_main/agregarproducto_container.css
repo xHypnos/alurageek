@@ -21,6 +21,10 @@
     font-size: 1.5rem;
 }
 
+.vistaprevia__img{
+    width: 176px;
+}
+
 .agregarproducto__form__input{
     width: 350px; 
     padding: 1rem;

@@ -1,30 +1,96 @@
 {
   "usuario": [
-      {
-          "nombre": "Wilson Montes",
-          "password": "123456789",
-          "id": "hypnoz@live.com"
-      },
-      {
-          "nombre": "Wilson Montes",
-          "password": "1",
-          "id": "1@live.com" 
-      }
+    {
+      "nombre": "Wilson Montes",
+      "password": "123456789",
+      "id": "hypnoz@live.com"
+    },
+    {
+      "nombre": "Wilson Montes",
+      "password": "1",
+      "id": "1@live.com"
+    }
   ],
-  "producto":[
-      {
-          "imagen": "/assets/img/item1.png",
-          "categoria": "Star Wars",
-          "nombre": "Mug Star Wars",
-          "precio": 60,
-          "descripcion": "Mug con diseño de Star Wars" 
-      },
-      {
-          "imagen": "/assets/img/item2.png",
-          "categoria": "Star Wars",
-          "nombre": "Mug Star Wars",
-          "precio": 60,
-          "descripcion": "Mug con diseño de Star Wars" 
-      }
+  "producto": [
+    {
+      "id": "1",
+      "imagen": "/assets/img/item1.png",
+      "categoria": "Star Wars",
+      "nombre": "Mug Star Wars",
+      "precio": 60,
+      "descripcion": "Mug con diseño de Star Wars"
+    },
+    {
+      "id": "2",
+      "imagen": "/assets/img/item2.png",
+      "categoria": "Star Wars",
+      "nombre": "Mug Star Wars",
+      "precio": 60,
+      "descripcion": "Mug con diseño de Star Wars"
+    },
+    {
+      "id": "3f68c027-a481-455b-b080-b81130337c68",
+      "imagen": "C:\\fakepath\\9227.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "f6dad330-8c06-461f-a0bf-a080c7ccca54",
+      "imagen": "C:\\fakepath\\9227.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "7100b75b-78d0-4f53-9437-08f12b94848a",
+      "imagen": "C:\\fakepath\\9227.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "e7c5bdc0-dc67-4649-ad95-4a4896a43dad",
+      "imagen": "C:\\fakepath\\9010.jpg",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "01dd06a2-feb1-4f50-b95a-9b6f2e07a8e7",
+      "imagen": "C:\\fakepath\\645-6457086_logo-de-los-videojuegos-hd-png-download.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "256d243d-550d-492f-a613-c3d9eb633156",
+      "imagen": "C:\\fakepath\\9227.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "10f27fea-ef9c-4c54-8295-daabb859a233",
+      "imagen": "C:\\fakepath\\1272824.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    },
+    {
+      "id": "0be3f741-d3d3-4ede-b57b-8b2c0496a431",
+      "imagen": "C:\\fakepath\\9227.png",
+      "categoria": "",
+      "nombre": "",
+      "precio": "",
+      "descripcion": ""
+    }
   ]
 }
