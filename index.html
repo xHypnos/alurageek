@@ -16,10 +16,10 @@
     <header>
         <section class="header__container">
             <div class="container__logobuscador">
-                <h1 class="header__logo"><img onclick="location.href='/index.html'" src="assets/img/logo.png" alt="Logo AluraGeek" class="header__logo__img"></h1>
+                <h1 class="header__logo"><img onclick="location.href='/index.html'" src="/assets/img/logo.png" alt="Logo AluraGeek" class="header__logo__img"></h1>
                 <div class="buscador__container">
-                    <input type="search" class="header__buscador" placeholder="¿Qué deseas buscar?">
-                    <ion-icon class="buscador__icono" name="search-outline"></ion-icon>
+                    <input type="text" class="header__buscador" placeholder="¿Qué deseas buscar?" data-searchtxt>
+                    <ion-icon class="buscador__icono" name="search-outline" data-searchbtn></ion-icon>
                 </div>
             </div>
             <input type="button" onclick="location.href='./assets/templates/login.html'" value="Login" class="header__loginbtn">
@@ -31,140 +31,38 @@
             <div class="banner">
                 <h2 class="banner__titulo">Abril Promocional</h2>
                 <p class="banner__descripcion">Productos seleccionados con 33% de descuento</p>
-                <input type="button" value="Ver Consolas" class="banner__boton">
+                <input type="button" onclick="location.href='/assets/templates/productos_categoria.html?categoria=Consolas'" value="Ver Consolas" class="banner__boton">
             </div>
         </section>
         <section class="articulos__container">
             <div class="articulos__categoria">
                 <div class="articulos__cabecera">
                     <h2 class="articulos__cabecera__titulo">Star Wars</h2>
-                    <p class="articulos__cabecera__link">Ver todo <ion-icon class="ion-arrow" name="arrow-forward-outline"></ion-icon></p>
+                    <p class="articulos__cabecera__link" onclick="location.href='/assets/templates/productos_categoria.html?categoria=Star Wars'">Ver todo <ion-icon class="ion-arrow" name="arrow-forward-outline"></ion-icon></p>
                 </div>
-                <div class="articulos__contenido">
-                    <div class="articulos__item">
-                        <img src="assets/img/item1.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item2.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item3.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item4.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item5.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item6.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
+                <div class="articulos__contenido" data-starwars>
+              
+                    
                 </div>
             </div>
             <div class="articulos__categoria">
                 <div class="articulos__cabecera">
                     <h2 class="articulos__cabecera__titulo">Consolas</h2>
-                    <p class="articulos__cabecera__link">Ver todo <ion-icon class="ion-arrow" name="arrow-forward-outline"></ion-icon></p>
+                    <p class="articulos__cabecera__link" onclick="location.href='/assets/templates/productos_categoria.html?categoria=Consolas'">Ver todo <ion-icon class="ion-arrow" name="arrow-forward-outline"></ion-icon></p>
                 </div>
-                <div class="articulos__contenido">
-                    <div class="articulos__item">
-                        <img src="assets/img/item7.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item8.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item9.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item10.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item11.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item12.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
+                <div class="articulos__contenido" data-consolas>
+                    
+                   
                 </div>
             </div>
             <div class="articulos__categoria">
                 <div class="articulos__cabecera">
-                    <h2 class="articulos__cabecera__titulo">Diversos</h2>
-                    <p class="articulos__cabecera__link">Ver todo<ion-icon class="ion-arrow" name="arrow-forward-outline"></ion-icon></p>
+                    <h2 class="articulos__cabecera__titulo" >Diversos</h2>
+                    <p class="articulos__cabecera__link" onclick="location.href='/assets/templates/productos_categoria.html?categoria=Consolas'">Ver todo<ion-icon class="ion-arrow" name="arrow-forward-outline"></ion-icon></p>
                 </div>
-                <div class="articulos__contenido">
-                    <div class="articulos__item">
-                        <img src="assets/img/item13.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item14.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item15.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item16.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item17.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
-                    <div class="articulos__item">
-                        <img src="assets/img/item18.png" alt="Imagen Articulo" class="articulo__img">
-                        <h3 class="articulo__nombre">Producto XYZ</h3>
-                        <p class="articulo__precio">$ 60,00</p>
-                        <p class="articulo__link">Ver producto</p>
-                    </div>
+                <div class="articulos__contenido" data-diversos>
+                    
+                    
                 </div>
             </div>
         </section>        
@@ -196,6 +94,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="assets/js/controllers/product-controller.js"></script>
+    <script type="module" src="/assets/js/controllers/search-controller.js"></script>
 </body>
 </html>

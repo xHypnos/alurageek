@@ -3,25 +3,75 @@ import { productService } from "../services/product-service.js";
 const mostrarProductos = () => {
     const productosContainer = document.querySelector("[data-articulos]");
 
-    productService.listaProductos().then(function(listaProductos){
-        listaProductos.forEach(function(producto){
-            const productoImagen = producto.imagen;
-            const productoNombre = producto.nombre;
-            const productoPrecio = producto.precio;
-
-            const productoHTML =
+    const mostrarArticulo = (id, imagen, nombre, precio) => {
+        const articulo = document.createElement("div");
+        const contenido =
             `<div class="articulos__item">
-                <img src="${productoImagen}" alt="Imagen Articulo" class="articulo__img">
+                <img src="${imagen}" alt="Imagen Articulo" class="articulo__img">
                 <div class="container__icons">
-                    <ion-icon class="delete__icon" name="trash"></ion-icon>
-                    <ion-icon class="edit__icon" name="create"></ion-icon>
+                    <ion-icon id=${id} class="delete__icon" name="trash"></ion-icon>
+                    <a class="edit__icon" href="/assets/templates/editar_producto.html?id=${id}"><ion-icon name="create"></ion-icon></a>
                 </div>
-                <h3 class="articulo__nombre">${productoNombre}</h3>
-                <p class="articulo__precio">${productoPrecio}</p>
+                <h3 class="articulo__nombre">${nombre}</h3>
+                <p class="articulo__precio">$ ${precio}</p>
                 <p class="articulo__link">Ver producto</p>
             </div>`;
 
-            productosContainer.innerHTML += productoHTML;
+        articulo.innerHTML = contenido;
+        
+        const eliminarBtn = articulo.querySelector(".delete__icon");
+        eliminarBtn.addEventListener("click", () =>{
+            productService.eliminarProducto(id).then(respuesta =>{
+                console.log(respuesta);
+            }).catch(error => alert(error));
+        });
+        return articulo;
+    };
+    
+    productService.listaProductos().then((listaProductos) =>{
+        listaProductos.forEach(({id, imagen, nombre, precio}) =>{
+            const mostrar = mostrarArticulo(id, imagen, nombre, precio);
+            productosContainer.appendChild(mostrar);
+        });
+    }); 
+};
+
+const mostrarProductosCategoria = () => {
+    const starWarsContainer = document.querySelector("[data-starwars]");
+    const consolasContainer = document.querySelector("[data-consolas]");
+    const dataDiversos = document.querySelector("[data-diversos]");
+
+    const mostrarArticulo = (id, imagen, nombre, precio) => {
+        const articuloContainer = document.createElement("div");
+
+        const contenido =
+            `<div class="articulos__item">
+                <img src="${imagen}" alt="Imagen Articulo" class="articulo__img">
+                <h3 class="articulo__nombre">${nombre}</h3>
+                <p class="articulo__precio">$ ${precio}</p>
+                <p class="articulo__link">Ver producto</p>
+            </div>`;
+        
+        articuloContainer.innerHTML = contenido;
+        return articuloContainer;
+    };
+    
+    productService.listaProductos().then((listaProductos) =>{
+        listaProductos.forEach(({id, imagen, categoria, nombre, precio}) =>{
+            if(categoria == "Star Wars"){
+                const mostrar = mostrarArticulo(id, imagen, nombre, precio);
+                starWarsContainer.appendChild(mostrar);
+            };
+
+            if(categoria == "Consolas"){
+                const mostrar = mostrarArticulo(id, imagen, nombre, precio);
+                consolasContainer.appendChild(mostrar);
+            };
+
+            if(categoria == "Diversos"){   
+                const mostrar = mostrarArticulo(id, imagen, nombre, precio);
+                dataDiversos.appendChild(mostrar);
+            };
         });
     }); 
 };
@@ -30,61 +80,13 @@ const crearProducto = () =>{
     const agregarProductoForm = document.querySelector("[data-form]");
     const seleccionarImg = document.querySelector("[data-imagen]");
 
-    seleccionarImg.addEventListener("change", (evento)=>{
-        const img = evento.target.files[0];
-        const reader = new FileReader();
-
-        reader.readAsDataURL(img);
-        reader.onload = () => {
-            const rutaImg = reader.result;
-            document.querySelector("[data-vistaprevia]").src = rutaImg;
-        };
+    seleccionarImg.addEventListener("change", ()=>{
+        const img = seleccionarImg.value;
+        document.querySelector("[data-vistaprevia]").src = img;
     });
 
     agregarProductoForm.addEventListener("submit", (evento) => {
         evento.preventDefault();
-
-        /* const urlImagen = document.querySelector("[data-vistaprevia]").src;
-        const xhr = new XMLHttpRequest();
-        xhr.responseType = 'blob';
-
-        xhr.onload = function () {
-            const blobImagen = xhr.response;
-            const nombreArchivo = 'imagen.jpg';
-            const rutaCarpeta = '/assets/img/';
-        
-            const formData = new FormData();
-            formData.append('archivo', blobImagen, nombreArchivo);
-        
-            const xhrSubir = new XMLHttpRequest();
-            xhrSubir.open('POST', rutaCarpeta, true);
-            xhrSubir.onload = function () {
-                console.log('Imagen guardada correctamente');
-            };
-            xhrSubir.send(formData);
-        };
-        
-        xhr.open('GET', urlImagen, true);
-        xhr.send();
-
-        const express = require('express');
-        const fs = require('fs');
-        const app = express();
-
-        app.post('/ruta-de-tu-servidor', (req, res) => {
-            const archivo = req.files.archivo;
-            const ruta = '/assets/img/' + archivo.name;
-
-            archivo.mv(ruta, (err) => {
-                if (err) {
-                    console.log(err);
-                    res.status(500).send('Error al guardar el archivo');
-                } else {
-                    console.log('Archivo guardado correctamente');
-                    res.send('Archivo guardado correctamente');
-                }
-            });
-        }); */
 
         const imagen = document.querySelector("[data-imagen]").value;
         const categoria = document.querySelector("[data-categoria]").value;
@@ -96,10 +98,14 @@ const crearProducto = () =>{
     });
 };
 
+if(window.location.pathname == "/index.html"){
+    mostrarProductosCategoria();
+};
+
 if(window.location.pathname == "/assets/templates/productos.html"){
     mostrarProductos();
 };
 
 if(window.location.pathname == "/assets/templates/agregar_producto.html"){
     crearProducto();
-}
+};

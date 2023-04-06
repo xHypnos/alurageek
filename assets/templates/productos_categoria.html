@@ -21,15 +21,15 @@
                     <ion-icon class="buscador__icono" name="search-outline" data-searchbtn></ion-icon>
                 </div>
             </div>
+            <input type="button" onclick="location.href='./assets/templates/login.html'" value="Login" class="header__loginbtn">
             <ion-icon class="header__busquedabtn" name="search-outline"></ion-icon>
         </section>
     </header>
     <main>
-        <section class="articulos__container">
+        <section class="articulos__container" data-container>
             <div class="articulos__categoria">
                 <div class="articulos__cabecera cabecera__productos">
-                    <h2 class="articulos__cabecera__titulo">Todos los productos</h2>
-                    <input class="agregar__productobtn" onclick="location.href=`/assets/templates/agregar_producto.html`" type="button" value="Agregar producto">
+                    <h2 class="articulos__cabecera__titulo" data-titulo></h2>
                 </div>
                 <div class="articulos__contenido" data-articulos>
                    
@@ -66,6 +66,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="/assets/js/controllers/product-controller.js"></script>
+    <script type="module" src="/assets/js/controllers/vercategoria-controller.js"></script>
 </body>
 </html>

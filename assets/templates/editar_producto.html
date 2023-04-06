@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>AluraGeek | Editar Producto</title>
     <link rel="shortcut icon" href="/assets/img/icono.svg" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/assets/css/header/header_container.css">
-    <link rel="stylesheet" href="/assets/css/main/articulos_container.css">
+    <link rel="stylesheet" href="/assets/css/agregarproducto_main/agregarproducto_container.css">
     <link rel="stylesheet" href="/assets/css/footer/footer_container.css">
 </head>
 <body>
@@ -21,28 +21,35 @@
                     <ion-icon class="buscador__icono" name="search-outline" data-searchbtn></ion-icon>
                 </div>
             </div>
+            <input type="button" value="Administrar" onclick="location.href='/assets/templates/productos.html'" class="header__loginbtn header__loginbtn__agregarproducto">
             <ion-icon class="header__busquedabtn" name="search-outline"></ion-icon>
         </section>
     </header>
     <main>
-        <section class="articulos__container">
-            <div class="articulos__categoria">
-                <div class="articulos__cabecera cabecera__productos">
-                    <h2 class="articulos__cabecera__titulo">Todos los productos</h2>
-                    <input class="agregar__productobtn" onclick="location.href=`/assets/templates/agregar_producto.html`" type="button" value="Agregar producto">
+        <section class="agregarproducto__container">
+            <form method="POST" class="agregarproducto__form" enctype="multipart/form-data" data-form>
+                <h3 class="agregarproducto__form__titulo">Editar producto</h3>
+                <img class="vistaprevia__img" src="/assets/img/subir.png" alt="Vista previa imagen" data-vistaprevia>
+                <input class="agregarproducto__form__input" type="text" placeholder="URL Imagen" name="imagen" data-imagen>
+                <div class="agregarproducto__form__input container__select">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" data-categoria>
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Diversos">Diversos</option>
+                    </select>
                 </div>
-                <div class="articulos__contenido" data-articulos>
-                   
-
-                    
-                </div>
-            </div>
+                <input class="agregarproducto__form__input" type="text" placeholder="Nombre del producto" data-nombre>
+                <input class="agregarproducto__form__input" type="number" placeholder="Precio del producto" data-precio>
+                <textarea class="agregarproducto__form__input" name="" id="" cols="30" rows="3" placeholder="Descripcion del producto" data-descripcion></textarea>
+                <button class="agregarproducto__form__input agregarproducto__form__submitbtn" type="submit">Guardar producto</button>
+            </form>
         </section>
     </main>
     <footer>
         <section class="footer__container">
             <div class="container__logoul">
-                <div class="footer__logo"><img onclick="location.href='/index.html'" src="/assets/img/logo.png" alt="Logo AluraGeek" class="footer__logo__img"></div>
+                <div class="footer__logo"><img src="/assets/img/logo.png" alt="Logo AluraGeek" class="footer__logo__img"></div>
                 <ul class="footer__ul">
                     <li class="footer__ul__li">Quienes somos</li>
                     <li class="footer__ul__li">Politica de privacidad</li>
@@ -64,8 +71,10 @@
             <p class="infodesarrollador__p">2023</p>
         </div>
     </footer>
+    <script type="module" src="/assets/js/controllers/editar-controller.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="/assets/js/controllers/product-controller.js"></script>
+    <!-- <script type="module" src="/assets/js/controllers/product-controller.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

@@ -13,84 +13,148 @@
   ],
   "producto": [
     {
-      "id": "1",
-      "imagen": "/assets/img/item1.png",
-      "categoria": "Star Wars",
-      "nombre": "Mug Star Wars",
-      "precio": 60,
-      "descripcion": "Mug con diseño de Star Wars"
-    },
-    {
-      "id": "2",
       "imagen": "/assets/img/item2.png",
       "categoria": "Star Wars",
       "nombre": "Mug Star Wars",
-      "precio": 60,
-      "descripcion": "Mug con diseño de Star Wars"
+      "precio": "60",
+      "descripcion": "Mug con diseño de Star Wars bien chidori",
+      "id": "2"
     },
     {
-      "id": "3f68c027-a481-455b-b080-b81130337c68",
-      "imagen": "C:\\fakepath\\9227.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "e89d46dd-d4b8-4b93-b1c5-3a494a2ecf0f",
+      "imagen": "/assets/img/item1.png",
+      "categoria": "Star Wars",
+      "nombre": "Mug Star Wars",
+      "precio": "10000",
+      "descripcion": "Mug"
     },
     {
-      "id": "f6dad330-8c06-461f-a0bf-a080c7ccca54",
-      "imagen": "C:\\fakepath\\9227.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "6445b6c6-e7d6-424e-918b-de51c6e26eaa",
+      "imagen": "/assets/img/item3.png",
+      "categoria": "Star Wars",
+      "nombre": "Figura Yoda",
+      "precio": "15000",
+      "descripcion": "Figura"
     },
     {
-      "id": "7100b75b-78d0-4f53-9437-08f12b94848a",
-      "imagen": "C:\\fakepath\\9227.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "cc8d7d80-8526-479e-947e-242d6de9dc95",
+      "imagen": "/assets/img/item4.png",
+      "categoria": "Star Wars",
+      "nombre": "Clon",
+      "precio": "56000000",
+      "descripcion": "Clon AAA Funcional"
     },
     {
-      "id": "e7c5bdc0-dc67-4649-ad95-4a4896a43dad",
-      "imagen": "C:\\fakepath\\9010.jpg",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "77f819d5-ac96-44f9-a68a-336cf0168377",
+      "imagen": "/assets/img/item5.png",
+      "categoria": "Star Wars",
+      "nombre": "Baby Yoda",
+      "precio": "540000",
+      "descripcion": "Yoda bebe"
     },
     {
-      "id": "01dd06a2-feb1-4f50-b95a-9b6f2e07a8e7",
-      "imagen": "C:\\fakepath\\645-6457086_logo-de-los-videojuegos-hd-png-download.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "3a8794ff-b3fc-4d2a-8a59-931e56c8ec8a",
+      "imagen": "/assets/img/item6.png",
+      "categoria": "Star Wars",
+      "nombre": "Cosplay Star Wars",
+      "precio": "120000",
+      "descripcion": "Cosplay"
     },
     {
-      "id": "256d243d-550d-492f-a613-c3d9eb633156",
-      "imagen": "C:\\fakepath\\9227.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "8cdedc21-676b-4794-8ff3-1b1e7d627af0",
+      "imagen": "/assets/img/item7.png",
+      "categoria": "Consolas",
+      "nombre": "Control Xbox Series S/X",
+      "precio": "250000",
+      "descripcion": "Control inalambrico"
     },
     {
-      "id": "10f27fea-ef9c-4c54-8295-daabb859a233",
-      "imagen": "C:\\fakepath\\1272824.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "dc314140-eb46-48e4-93ff-2b26cb5b180d",
+      "imagen": "/assets/img/item8.png",
+      "categoria": "Consolas",
+      "nombre": "PS5",
+      "precio": "3000000",
+      "descripcion": "Consola de Videojuegos PS5"
     },
     {
-      "id": "0be3f741-d3d3-4ede-b57b-8b2c0496a431",
-      "imagen": "C:\\fakepath\\9227.png",
-      "categoria": "",
-      "nombre": "",
-      "precio": "",
-      "descripcion": ""
+      "id": "1f5634b9-e0fc-44eb-b63f-cb9ff01c024f",
+      "imagen": "/assets/img/item9.png",
+      "categoria": "Consolas",
+      "nombre": "Nintendo",
+      "precio": "150000",
+      "descripcion": "Consola Clasica"
+    },
+    {
+      "id": "bd656011-1dfd-41fe-8faf-7391b870cf3e",
+      "imagen": "/assets/img/item10.png",
+      "categoria": "Consolas",
+      "nombre": "Nintendo Switch",
+      "precio": "2500000",
+      "descripcion": "Consola de Videojuegos de Nintendo"
+    },
+    {
+      "id": "48630700-407d-4962-bae1-e5b6eaac5d19",
+      "imagen": "/assets/img/item11.png",
+      "categoria": "Consolas",
+      "nombre": "Xbox Series X",
+      "precio": "2800000",
+      "descripcion": "Consola de Microsoft"
+    },
+    {
+      "id": "902bdf9a-db1d-414b-81f1-f11b8d201e05",
+      "imagen": "/assets/img/item12.png",
+      "categoria": "Consolas",
+      "nombre": "Game Boy",
+      "precio": "320000",
+      "descripcion": "Consola Retro"
+    },
+    {
+      "id": "7a74c8c5-2eba-47fb-82f2-61f8426b126e",
+      "imagen": "/assets/img/item13.png",
+      "categoria": "Diversos",
+      "nombre": "Camisa Atari",
+      "precio": "18000",
+      "descripcion": "Camisa todas las tallas"
+    },
+    {
+      "id": "5eb8d12e-d573-4f59-9cae-a880f00b37b2",
+      "imagen": "/assets/img/item14.png",
+      "categoria": "Diversos",
+      "nombre": "Camiseta control",
+      "precio": "25000",
+      "descripcion": "Estampados de control"
+    },
+    {
+      "id": "8d036c01-bbba-4905-a028-fc7d6f8f0146",
+      "imagen": "/assets/img/item15.png",
+      "categoria": "Diversos",
+      "nombre": "Figura Sonic",
+      "precio": "24000",
+      "descripcion": "Figura coleccionable"
+    },
+    {
+      "id": "47f6f0cd-ee0f-442f-981b-1ba04d85bddc",
+      "imagen": "/assets/img/item16.png",
+      "categoria": "Diversos",
+      "nombre": "Reloj Retro",
+      "precio": "48000",
+      "descripcion": "Reloj con radio diseño retro"
+    },
+    {
+      "id": "19a3fbab-bb64-477a-81d3-1b553c0bed11",
+      "imagen": "/assets/img/item17.png",
+      "categoria": "Diversos",
+      "nombre": "Camiseta hamburguesa",
+      "precio": "28000",
+      "descripcion": "Estampado de hamburguesa"
+    },
+    {
+      "id": "e39be3e9-c20a-4253-9e02-1c7f5fe326a8",
+      "imagen": "/assets/img/item18.png",
+      "categoria": "Diversos",
+      "nombre": "Robot de Pikachu",
+      "precio": "99000000",
+      "descripcion": "Robot de pikachu tamaño real con funciones de ataque incluidas."
     }
   ]
 }

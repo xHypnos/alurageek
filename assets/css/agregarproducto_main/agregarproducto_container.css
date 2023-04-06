@@ -23,6 +23,7 @@
 
 .vistaprevia__img{
     width: 176px;
+    margin-bottom: 1rem;
 }
 
 .agregarproducto__form__input{
@@ -31,6 +32,23 @@
     margin-bottom: 1rem;
     border: none;
     outline: none;
+    border-radius: 4px;
+    color: var(--color-texto);
+    font-family: 'Raleway', sans-serif;
+}
+
+.container__select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+}
+
+.container__select select{
+    border: none;
+    outline: none;
+    width: 70%;
+    padding: 1rem;
     border-radius: 4px;
     color: var(--color-texto);
     font-family: 'Raleway', sans-serif;

@@ -89,6 +89,7 @@
 
 .delete__icon, .edit__icon{
     cursor: pointer;
+    color: #ffffff;
 }
 
 .delete__icon{

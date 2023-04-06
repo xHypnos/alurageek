@@ -17,11 +17,11 @@
             <div class="container__logobuscador">
                 <h1 class="header__logo"><img onclick="location.href='/index.html'" src="/assets/img/logo.png" alt="Logo AluraGeek" class="header__logo__img"></h1>
                 <div class="buscador__container">
-                    <input type="search" class="header__buscador" placeholder="¿Qué deseas buscar?">
-                    <ion-icon class="buscador__icono" name="search-outline"></ion-icon>
+                    <input type="text" class="header__buscador" placeholder="¿Qué deseas buscar?" data-searchtxt>
+                    <ion-icon class="buscador__icono" name="search-outline" data-searchbtn></ion-icon>
                 </div>
-            </div>
-            <input type="button" value="Administrar" class="header__loginbtn header__loginbtn__agregarproducto">
+            </div> 
+            <input type="button" value="Administrar" onclick="location.href='/assets/templates/productos.html'" class="header__loginbtn header__loginbtn__agregarproducto">
             <ion-icon class="header__busquedabtn" name="search-outline"></ion-icon>
         </section>
     </header>
@@ -30,10 +30,17 @@
             <form action="" class="agregarproducto__form" data-form>
                 <h3 class="agregarproducto__form__titulo">Agregar producto</h3>
                 <img class="vistaprevia__img" src="/assets/img/subir.png" alt="Vista previa imagen" data-vistaprevia>
-                <input class="agregarproducto__form__input" type="file" placeholder="URL de imagen" data-imagen>
-                <input class="agregarproducto__form__input" type="text" placeholder="Categoria" data-categoria>
+                <input class="agregarproducto__form__input" type="text" placeholder="URL de imagen" data-imagen>
+                <div class="agregarproducto__form__input container__select">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" data-categoria>
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Diversos">Diversos</option>
+                    </select>
+                </div>
                 <input class="agregarproducto__form__input" type="text" placeholder="Nombre del producto" data-nombre>
-                <input class="agregarproducto__form__input" type="text" placeholder="Precio del producto" data-precio>
+                <input class="agregarproducto__form__input" type="number" placeholder="Precio del producto" data-precio>
                 <textarea class="agregarproducto__form__input" name="" id="" cols="30" rows="3" placeholder="Descripcion del producto" data-descripcion></textarea>
                 <button class="agregarproducto__form__input agregarproducto__form__submitbtn" type="submit">Agregar producto</button>
             </form>
