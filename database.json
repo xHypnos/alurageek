@@ -45,14 +45,6 @@
       "descripcion": "Clon AAA Funcional"
     },
     {
-      "id": "77f819d5-ac96-44f9-a68a-336cf0168377",
-      "imagen": "/assets/img/item5.png",
-      "categoria": "Star Wars",
-      "nombre": "Baby Yoda",
-      "precio": "540000",
-      "descripcion": "Yoda bebe"
-    },
-    {
       "id": "3a8794ff-b3fc-4d2a-8a59-931e56c8ec8a",
       "imagen": "/assets/img/item6.png",
       "categoria": "Star Wars",
@@ -155,6 +147,14 @@
       "nombre": "Robot de Pikachu",
       "precio": "99000000",
       "descripcion": "Robot de pikachu tamaño real con funciones de ataque incluidas."
+    },
+    {
+      "id": "d4ba8864-097a-4de4-a182-54c90f1cc4e7",
+      "imagen": "https://cdn.vox-cdn.com/thumbor/lWOGzsPeAD6YzEVVNH001nrSqPM=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24458108/captain_pikachu.jpg",
+      "categoria": "Diversos",
+      "nombre": "Foto Pikachu",
+      "precio": "20000",
+      "descripcion": "Imagen de pokemon"
     }
   ]
 }

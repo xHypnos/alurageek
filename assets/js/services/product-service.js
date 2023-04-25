@@ -1,8 +1,10 @@
-import { firebaseService } from "../services/firebase-service.js";
-
 const listaProductos = () => {
-    return firebaseService.getDbProductos;
-    /* return fetch(`http://localhost:3000/producto`).then(respuesta => respuesta.json()) */
+    return fetch(`/database.json`)
+    .then(respuesta => respuesta.json())
+    .then(data => {
+        const productos = data['producto'];
+        return productos;
+    })
 };
 
 const agregarProducto = (imagen, categoria, nombre, precio, descripcion) => {

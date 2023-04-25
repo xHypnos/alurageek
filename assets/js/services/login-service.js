@@ -1,12 +1,11 @@
-import { firebaseService } from "./firebase-service.js";
-
 const listaUsuarios = (email) => {
-    /* const usuarios = firebaseService.getDbUsuarios; */
-
-    const usuarios = firebaseService.getDbUsuarios;
-    console.log(usuarios)
-
-    /* return fetch(`http://localhost:3000/usuario/${email}`).then(respuesta => respuesta.json()) */
+    return fetch(`/database.json`)
+    .then(respuesta => respuesta.json())
+    .then(data => {
+        const usuarios = data['usuario'];
+        const datosUsuario = usuarios.find(usuario => usuario.id === email);
+        return datosUsuario; 
+    }) 
 };
 
 
