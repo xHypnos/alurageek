@@ -8,6 +8,7 @@
  Escribe los siguientes comandos:
  
  npm i json-server
+ 
  json-server --watch database.json
  
  
